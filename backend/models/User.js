@@ -128,4 +128,8 @@ UserSchema.methods.isFollowing = function(id) {
   });
 };
 
+UserSchema.methods.setVerified = function(verify) {
+  return this.isVerified = verify;
+};
+
 mongoose.model("User", UserSchema);
