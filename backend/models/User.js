@@ -13,7 +13,6 @@ var UserSchema = new mongoose.Schema(
       required: [true, "can't be blank"],
       match: [/^[a-zA-Z0-9]+$/, "is invalid"],
       index: true,
-      isVerified: false
     },
     email: {
       type: String,
@@ -33,7 +32,8 @@ var UserSchema = new mongoose.Schema(
     favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Item" }],
     following: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     hash: String,
-    salt: String
+    salt: String,      
+    isVerified: false
   },
   { timestamps: true }
 );
