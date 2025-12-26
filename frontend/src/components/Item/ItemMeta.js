@@ -17,7 +17,7 @@ const ItemMeta = (props) => {
 
       <div className="flex-grow-1 d-flex flex-column py-2">
         <Link to={`/@${item.seller.username}`} className="seller">
-          {item.seller.username}
+          {item.seller.username} {item.seller.isVerified && <img src="../../../public/verified_seller.svg" alt="Verified" className="verified-badge"></img>} <span>TOP SELLER</span>
         </Link>
         <span className="date">{new Date(item.createdAt).toDateString()}</span>
       </div>

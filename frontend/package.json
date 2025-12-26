@@ -2,10 +2,13 @@
   "name": "anythink-market-front",
   "version": "0.1.0",
   "engines": {
-    "node": "^16"
+    "node": ">=16"
   },
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.13",
+    "@babel/preset-react": "^7.18.13",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
     "core-js": "^3.25.1",
     "enzyme": "^3.11.0",
@@ -29,10 +32,10 @@
     "prop-types": "^15.5.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^5.0.7",
+    "react-redux": "^7.2.6",
     "react-router-dom": "^6.9.0",
     "react-scripts": "^5.0.1",
-    "redux": "^3.6.0",
+    "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.2",
     "sass": "^1.45.0",
     "superagent": "^3.8.2",
@@ -69,6 +72,7 @@
     ]
   },
   "resolutions": {
-    "autoprefixer": "10.4.5"
+    "autoprefixer": "10.4.5",
+    "commander": "^11.0.0"
   }
 }
