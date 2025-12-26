@@ -2,7 +2,7 @@
   "name": "anythink-market-front",
   "version": "0.1.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=16"
   },
   "private": true,
   "devDependencies": {
@@ -69,6 +69,7 @@
     ]
   },
   "resolutions": {
-    "autoprefixer": "10.4.5"
+    "autoprefixer": "10.4.5",
+    "commander": "^11.0.0"
   }
 }
